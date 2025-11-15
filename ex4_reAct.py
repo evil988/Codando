@@ -12,15 +12,9 @@ from langchain_groq import ChatGroq
 
 load_dotenv()
 
-# Plano A
-groq_api_key = os.environ["GROQ_API_KEY"]
-
-# Plano B
-# groq_api_key = os.environ["GROQ_API_KEY_2"]
-
 # Inicializar o LLM
 # https://console.groq.com/docs/model/llama-3.3-70b-versatile
-llm = ChatGroq(groq_api_key=groq_api_key, model="llama-3.3-70b-versatile", temperature=0)
+llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 
 @tool
 def calcular_idade(data_nascimento: str) -> str:
