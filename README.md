@@ -1,3 +1,3 @@
-# Codando Examples
+# Exemplos Codando
 
-This `prompt-demo` branch contains the examples presented in Codando on 14/11/2025.
+Esta branch `prompt-demo` contém os exemplos apresentados no Codando em 14/11/2025.
