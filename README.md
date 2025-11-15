@@ -2,6 +2,34 @@
 
 Esta branch contém prompts demonstrados no Codando apresentado em 14/11/2025.
 
+## Preparação do Ambiente
+
+Para executar os exercícios desta branch, siga os passos abaixo para configurar seu ambiente:
+
+1.  **Instalar Python**: Certifique-se de ter o Python 3.9 ou superior instalado em sua máquina. Você pode baixá-lo em [python.org](https://www.python.org/downloads/).
+
+2.  **Instalar `uv`**: `uv` é uma ferramenta rápida para gerenciamento de pacotes Python. Se você ainda não o tem, instale-o com pip:
+    ```bash
+    pip install uv
+    ```
+
+3.  **Instalar Dependências**: Navegue até o diretório raiz do projeto e instale as dependências usando `uv`:
+    ```bash
+    uv sync
+    ```
+
+4.  **Configurar Chaves de API (`.env`)**:
+    Muitos dos exemplos utilizam o `ChatGroq` para interagir com modelos de linguagem. Para isso, é necessário configurar sua chave de API do Groq.
+
+    -   Crie um arquivo chamado `.env` na raiz do projeto.
+    -   Dentro deste arquivo, adicione a seguinte linha, substituindo `SUA_API_KEY_GROQ` pela sua chave real:
+        ```
+        GROQ_API_KEY=SUA_API_KEY_GROQ
+        ```
+    -   Você pode obter sua chave de API gratuitamente em [https://console.groq.com/keys](https://console.groq.com/keys).
+
+Após seguir esses passos, seu ambiente estará pronto para executar os exemplos.
+
 ## Exercícios
 
 ### ex1_prompt.py
